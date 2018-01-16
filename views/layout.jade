@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    div.header
+      div.sidebarbutton
+        a.sidebarlink(href='#')
+          i.fa.fa-bars.sidebarexpand
+      .profile
+        if (!user)
+          button.actionbutton#buttonone(onclick="window.location.href='/register'")
+            i.fa.fa-user.showme  
+            p.hideme Register
+          button.actionbutton#buttontwo(onclick="window.location.href='/login'")
+            i.showme.fa.fa-sign-in
+            p.hideme Login
+        if (user) 
+          h4.username #{user.name}
+          button.logoutbutton(onclick="window.location.href='/logout'")
+            i.fa.fa-sign-in
+      .alertsection
+        a(href='')
+          i.fa.fa-bell-o
+    div.sidebar
+      a.barlink(href="/")
+        i.fa.fa-home
+      a.barlink(href="")
+        i.fa.fa-archive
+      a.barlink(href="")
+        i.fa.fa-line-chart
+      a.barlink(href="")
+        i.fa.fa-newspaper-o
+
+
+    div.container
+      div.content
+        block content
+
+
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')

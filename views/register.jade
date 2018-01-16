@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .registerpane 
+    .leftpane
+    .rightpane
+      form.form-signin(role='form', action="/register",method="post", style='max-width: 300px;')
+        h2.form-signin-heading Get started.
+        p Sign up today and start reaping the benefits of one of the best portfolio management tools on the market.
+        input.form-control(type='text', name="name", placeholder='Your Name')
+        input.form-control(type='text', name="username", placeholder='Your Username')
+        input.form-control(type='password', name="password", placeholder='Your Password')
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign Up
