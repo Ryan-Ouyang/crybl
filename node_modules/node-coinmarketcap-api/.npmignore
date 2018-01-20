@@ -1,0 +1,17 @@
+#npm
+node_modules/
+npm-debug.log
+
+# tmp, editor & OS files
+.vscode
+.svn
+.tmp
+*.swo
+*.swp
+*.swn
+*.swm
+.DS_STORE
+*#
+*~
+
+test.js

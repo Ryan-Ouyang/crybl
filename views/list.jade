@@ -1,20 +1,582 @@
 extends layout
 
-//block content
+block content
     .listHeader
         h3 Top Cryptocurrencies (24 Hours)
-        p The following are the top cryptocurrencies which (ranked from largest marketcap to least marketcap). Information is updated every five minutes.
+        p The following are the top cryptocurrencies (ranked from largest marketcap to least marketcap). Information is updated every five minutes.
+    .topcrypto#customtop
+        .rank
+        .name
+            h3 Name
+        .price
+            h3 Price
+        .marketcap
+           h3 Market Cap
+        .percentchange
+            h3 Change
+    .topcrypto
+        .rank
+            h3 #{cmc[0].rank}
+        .name
+            h4 #{cmc[0].name}
+        .price
+            h4 $#{cmc[0].price_usd}
+        .marketcap 
+            h4 $#{cmc[0].market_cap_usd}
+        .percentchange
+            h4 #{cmc[0].percent_change_24h}%
+    .topcrypto
+        .rank
+            h3 #{cmc[1].rank}
+        .name
+            h4 #{cmc[1].name}
+        .price
+            h4 $#{cmc[1].price_usd}
+        .marketcap 
+            h4 $#{cmc[1].market_cap_usd}
+        .percentchange
+            h4 #{cmc[1].percent_change_24h}%
+    .topcrypto
+        .rank
+            h3 #{cmc[2].rank}
+        .name
+            h4 #{cmc[2].name}
+        .price
+            h4 $#{cmc[2].price_usd}
+        .marketcap 
+            h4 $#{cmc[2].market_cap_usd}
+        .percentchange
+            h4 #{cmc[2].percent_change_24h}% 
+    .topcrypto
+        .rank
+            h3 #{cmc[3].rank}
+        .name
+            h4 #{cmc[3].name}
+        .price
+            h4 $#{cmc[3].price_usd}
+        .marketcap 
+            h4 $#{cmc[3].market_cap_usd}
+        .percentchange
+            h4 #{cmc[3].percent_change_24h}%
     .topcrypto
         .rank 
-            h3 
+            h3 #{cmc[4].rank}
         .name
-            h4 
+            h4 #{cmc[4].name}
         .price
-            h4 $111.11  
+            h4 $#{cmc[4].price_usd}
         .marketcap 
-            h4 $111,111,111,111
+            h4 $#{cmc[4].market_cap_usd}
         .percentchange
-            h4 +6.50%
+            h4 #{cmc[4].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[5].rank}
+        .name
+            h4 #{cmc[5].name}
+        .price
+            h4 $#{cmc[5].price_usd}
+        .marketcap 
+            h4 $#{cmc[5].market_cap_usd}
+        .percentchange
+            h4 #{cmc[5].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[6].rank}
+        .name
+            h4 #{cmc[6].name}
+        .price
+            h4 $#{cmc[6].price_usd}
+        .marketcap 
+            h4 $#{cmc[6].market_cap_usd}
+        .percentchange
+            h4 #{cmc[6].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[7].rank}
+        .name
+            h4 #{cmc[7].name}
+        .price
+            h4 $#{cmc[7].price_usd}
+        .marketcap 
+            h4 $#{cmc[7].market_cap_usd}
+        .percentchange
+            h4 #{cmc[7].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[8].rank}
+        .name
+            h4 #{cmc[8].name}
+        .price
+            h4 $#{cmc[8].price_usd}
+        .marketcap 
+            h4 $#{cmc[8].market_cap_usd}
+        .percentchange
+            h4 #{cmc[8].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[9].rank}
+        .name
+            h4 #{cmc[9].name}
+        .price
+            h4 $#{cmc[9].price_usd}
+        .marketcap 
+            h4 $#{cmc[9].market_cap_usd}
+        .percentchange
+            h4 #{cmc[9].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[10].rank}
+        .name
+            h4 #{cmc[10].name}
+        .price
+            h4 $#{cmc[10].price_usd}
+        .marketcap 
+            h4 $#{cmc[10].market_cap_usd}
+        .percentchange
+            h4 #{cmc[10].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[11].rank}
+        .name
+            h4 #{cmc[11].name}
+        .price
+            h4 $#{cmc[11].price_usd}
+        .marketcap 
+            h4 $#{cmc[11].market_cap_usd}
+        .percentchange
+            h4 #{cmc[11].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[12].rank}
+        .name
+            h4 #{cmc[12].name}
+        .price
+            h4 $#{cmc[12].price_usd}
+        .marketcap 
+            h4 $#{cmc[12].market_cap_usd}
+        .percentchange
+            h4 #{cmc[12].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[13].rank}
+        .name
+            h4 #{cmc[13].name}
+        .price
+            h4 $#{cmc[13].price_usd}
+        .marketcap 
+            h4 $#{cmc[13].market_cap_usd}
+        .percentchange
+            h4 #{cmc[13].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[14].rank}
+        .name
+            h4 #{cmc[14].name}
+        .price
+            h4 $#{cmc[14].price_usd}
+        .marketcap 
+            h4 $#{cmc[14].market_cap_usd}
+        .percentchange
+            h4 #{cmc[14].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[15].rank}
+        .name
+            h4 #{cmc[15].name}
+        .price
+            h4 $#{cmc[15].price_usd}
+        .marketcap 
+            h4 $#{cmc[15].market_cap_usd}
+        .percentchange
+            h4 #{cmc[15].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[16].rank}
+        .name
+            h4 #{cmc[16].name}
+        .price
+            h4 $#{cmc[16].price_usd}
+        .marketcap 
+            h4 $#{cmc[16].market_cap_usd}
+        .percentchange
+            h4 #{cmc[16].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[17].rank}
+        .name
+            h4 #{cmc[17].name}
+        .price
+            h4 $#{cmc[17].price_usd}
+        .marketcap 
+            h4 $#{cmc[17].market_cap_usd}
+        .percentchange
+            h4 #{cmc[17].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[18].rank}
+        .name
+            h4 #{cmc[18].name}
+        .price
+            h4 $#{cmc[18].price_usd}
+        .marketcap 
+            h4 $#{cmc[18].market_cap_usd}
+        .percentchange
+            h4 #{cmc[18].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[19].rank}
+        .name
+            h4 #{cmc[19].name}
+        .price
+            h4 $#{cmc[19].price_usd}
+        .marketcap 
+            h4 $#{cmc[19].market_cap_usd}
+        .percentchange
+            h4 #{cmc[19].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[20].rank}
+        .name
+            h4 #{cmc[20].name}
+        .price
+            h4 $#{cmc[20].price_usd}
+        .marketcap 
+            h4 $#{cmc[20].market_cap_usd}
+        .percentchange
+            h4 #{cmc[20].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[21].rank}
+        .name
+            h4 #{cmc[21].name}
+        .price
+            h4 $#{cmc[21].price_usd}
+        .marketcap 
+            h4 $#{cmc[21].market_cap_usd}
+        .percentchange
+            h4 #{cmc[21].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[22].rank}
+        .name
+            h4 #{cmc[22].name}
+        .price
+            h4 $#{cmc[22].price_usd}
+        .marketcap 
+            h4 $#{cmc[22].market_cap_usd}
+        .percentchange
+            h4 #{cmc[22].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[23].rank}
+        .name
+            h4 #{cmc[23].name}
+        .price
+            h4 $#{cmc[23].price_usd}
+        .marketcap 
+            h4 $#{cmc[23].market_cap_usd}
+        .percentchange
+            h4 #{cmc[23].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[24].rank}
+        .name
+            h4 #{cmc[24].name}
+        .price
+            h4 $#{cmc[24].price_usd}
+        .marketcap 
+            h4 $#{cmc[24].market_cap_usd}
+        .percentchange
+            h4 #{cmc[24].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[25].rank}
+        .name
+            h4 #{cmc[25].name}
+        .price
+            h4 $#{cmc[25].price_usd}
+        .marketcap 
+            h4 $#{cmc[25].market_cap_usd}
+        .percentchange
+            h4 #{cmc[25].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[26].rank}
+        .name
+            h4 #{cmc[26].name}
+        .price
+            h4 $#{cmc[26].price_usd}
+        .marketcap 
+            h4 $#{cmc[26].market_cap_usd}
+        .percentchange
+            h4 #{cmc[26].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[27].rank}
+        .name
+            h4 #{cmc[27].name}
+        .price
+            h4 $#{cmc[27].price_usd}
+        .marketcap 
+            h4 $#{cmc[27].market_cap_usd}
+        .percentchange
+            h4 #{cmc[27].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[28].rank}
+        .name
+            h4 #{cmc[28].name}
+        .price
+            h4 $#{cmc[28].price_usd}
+        .marketcap 
+            h4 $#{cmc[28].market_cap_usd}
+        .percentchange
+            h4 #{cmc[28].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[29].rank}
+        .name
+            h4 #{cmc[29].name}
+        .price
+            h4 $#{cmc[29].price_usd}
+        .marketcap 
+            h4 $#{cmc[29].market_cap_usd}
+        .percentchange
+            h4 #{cmc[29].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[30].rank}
+        .name
+            h4 #{cmc[30].name}
+        .price
+            h4 $#{cmc[30].price_usd}
+        .marketcap 
+            h4 $#{cmc[30].market_cap_usd}
+        .percentchange
+            h4 #{cmc[30].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[31].rank}
+        .name
+            h4 #{cmc[31].name}
+        .price
+            h4 $#{cmc[31].price_usd}
+        .marketcap 
+            h4 $#{cmc[31].market_cap_usd}
+        .percentchange
+            h4 #{cmc[31].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[32].rank}
+        .name
+            h4 #{cmc[32].name}
+        .price
+            h4 $#{cmc[32].price_usd}
+        .marketcap 
+            h4 $#{cmc[32].market_cap_usd}
+        .percentchange
+            h4 #{cmc[32].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[33].rank}
+        .name
+            h4 #{cmc[33].name}
+        .price
+            h4 $#{cmc[33].price_usd}
+        .marketcap 
+            h4 $#{cmc[33].market_cap_usd}
+        .percentchange
+            h4 #{cmc[33].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[34].rank}
+        .name
+            h4 #{cmc[34].name}
+        .price
+            h4 $#{cmc[34].price_usd}
+        .marketcap 
+            h4 $#{cmc[34].market_cap_usd}
+        .percentchange
+            h4 #{cmc[34].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[35].rank}
+        .name
+            h4 #{cmc[35].name}
+        .price
+            h4 $#{cmc[35].price_usd}
+        .marketcap 
+            h4 $#{cmc[35].market_cap_usd}
+        .percentchange
+            h4 #{cmc[35].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[36].rank}
+        .name
+            h4 #{cmc[36].name}
+        .price
+            h4 $#{cmc[36].price_usd}
+        .marketcap 
+            h4 $#{cmc[36].market_cap_usd}
+        .percentchange
+            h4 #{cmc[36].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[37].rank}
+        .name
+            h4 #{cmc[37].name}
+        .price
+            h4 $#{cmc[37].price_usd}
+        .marketcap 
+            h4 $#{cmc[37].market_cap_usd}
+        .percentchange
+            h4 #{cmc[37].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[38].rank}
+        .name
+            h4 #{cmc[38].name}
+        .price
+            h4 $#{cmc[38].price_usd}
+        .marketcap 
+            h4 $#{cmc[38].market_cap_usd}
+        .percentchange
+            h4 #{cmc[38].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[39].rank}
+        .name
+            h4 #{cmc[39].name}
+        .price
+            h4 $#{cmc[39].price_usd}
+        .marketcap 
+            h4 $#{cmc[39].market_cap_usd}
+        .percentchange
+            h4 #{cmc[39].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[40].rank}
+        .name
+            h4 #{cmc[40].name}
+        .price
+            h4 $#{cmc[40].price_usd}
+        .marketcap 
+            h4 $#{cmc[40].market_cap_usd}
+        .percentchange
+            h4 #{cmc[40].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[41].rank}
+        .name
+            h4 #{cmc[41].name}
+        .price
+            h4 $#{cmc[41].price_usd}
+        .marketcap 
+            h4 $#{cmc[41].market_cap_usd}
+        .percentchange
+            h4 #{cmc[41].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[42].rank}
+        .name
+            h4 #{cmc[42].name}
+        .price
+            h4 $#{cmc[42].price_usd}
+        .marketcap 
+            h4 $#{cmc[42].market_cap_usd}
+        .percentchange
+            h4 #{cmc[42].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[43].rank}
+        .name
+            h4 #{cmc[43].name}
+        .price
+            h4 $#{cmc[43].price_usd}
+        .marketcap 
+            h4 $#{cmc[43].market_cap_usd}
+        .percentchange
+            h4 #{cmc[43].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[44].rank}
+        .name
+            h4 #{cmc[44].name}
+        .price
+            h4 $#{cmc[44].price_usd}
+        .marketcap 
+            h4 $#{cmc[44].market_cap_usd}
+        .percentchange
+            h4 #{cmc[44].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[45].rank}
+        .name
+            h4 #{cmc[45].name}
+        .price
+            h4 $#{cmc[45].price_usd}
+        .marketcap 
+            h4 $#{cmc[45].market_cap_usd}
+        .percentchange
+            h4 #{cmc[45].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[46].rank}
+        .name
+            h4 #{cmc[46].name}
+        .price
+            h4 $#{cmc[46].price_usd}
+        .marketcap 
+            h4 $#{cmc[46].market_cap_usd}
+        .percentchange
+            h4 #{cmc[46].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[47].rank}
+        .name
+            h4 #{cmc[47].name}
+        .price
+            h4 $#{cmc[47].price_usd}
+        .marketcap 
+            h4 $#{cmc[47].market_cap_usd}
+        .percentchange
+            h4 #{cmc[47].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[48].rank}
+        .name
+            h4 #{cmc[48].name}
+        .price
+            h4 $#{cmc[48].price_usd}
+        .marketcap 
+            h4 $#{cmc[48].market_cap_usd}
+        .percentchange
+            h4 #{cmc[48].percent_change_24h}%
+    .topcrypto
+        .rank 
+            h3 #{cmc[49].rank}
+        .name
+            h4 #{cmc[49].name}
+        .price
+            h4 $#{cmc[49].price_usd}
+        .marketcap 
+            h4 $#{cmc[49].market_cap_usd}
+        .percentchange
+            h4 #{cmc[49].percent_change_24h}%
+
     .marketStatHeader
         h3 Top Cryptocurrency Stats (24 hours)
         p The following are the statistical values for the top cryptocurrencies in the last 24 hours.
+        h3 Market Cap (total)
+        h4 $#{cmc2.total_market_cap_usd} USD
+        h3 24Hr Volume
+        h4 #{cmc2.total_24h_volume_usd}
+        h3 Bitcoin Dominance
+        h4 #{cmc2.bitcoin_percentage_of_market_cap}%
+        h3 Active Currencies
+        h4 #{cmc2.active_currencies} Currencies
+        h3 Active Assets
+        h4 #{cmc2.active_assets} Assets
+        h3 Active Markets 
+        h4 #{cmc2.active_markets} Markets

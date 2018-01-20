@@ -9,6 +9,8 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var request = require('request');
 var getJSON = require('get-json');
+var Coinmarketcap = require('node-coinmarketcap-api');
+var coinmarketcap = new Coinmarketcap();
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/node-auth')
@@ -27,6 +29,14 @@ getJSON('https://api.blockcypher.com/v1/eth/main', function(error, response){
     app.locals.blockcypher=(response)
 })
 
+getJSON('https://api.coinmarketcap.com/v1/ticker/?limit=100', function(error, response){
+    app.locals.cmc=(response)
+})
+
+getJSON('https://api.coinmarketcap.com/v1/global/', function(error, response){
+  app.locals.cmc2=(response)
+})
+//console.log(response);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -48,6 +58,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+
+// coinmarketcap api pull for list page
+//(async () => {
+  //let top_25 = await coinmarketcap.ticker(null, 'CAD', 25);
+ // app.locals.cmc=(top_25)
+//})();
 
 // passport configuration
 var User = require('./models/User');

@@ -9,6 +9,9 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
+.content {
+  padding-top: 50px;
+}
 
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -52,8 +55,12 @@ body {
   height: 60px;
   background-color: #FFFFFF;
   border-bottom: 1px solid #DDE3E6;
+  position: fixed;
+  width: 100vw;
 }
+block {
 
+}
 .sidebar {
   width: 60px;
   background-color: #FFFFFF;
@@ -324,8 +331,8 @@ body {
 }
 .marketStatHeader {
   width: 37vw;
-  margin-left: 15px;
-  height: 125px;
+  margin-left: calc(45vw + 15px);
+  padding-bottom: 20px;
   float: left;
   margin-top: 30px;
   background-color: #FEFEFE;
@@ -334,6 +341,10 @@ body {
   padding-left: 30px;
   padding-top: 5px;
   padding-right: 10px;
+  position: fixed;
+}
+.marketStatHeader>h4 {
+  color: #4980F9;
 }
 .topcrypto {
   width: 45vw;
@@ -348,12 +359,12 @@ body {
   padding-right: 10px;
 }
 .rank {
-  width: 20%;
+  width: 7%;
   height: 100%;
   float: left;
 }
 .name{
-  width: 20%;
+  width: 23%;
   height: 100%;
   float: left;
   padding-top: 15px;
@@ -366,7 +377,7 @@ body {
   padding-left: 10px;
 }
 .marketcap {
-  width: 20%;
+  width: 30%;
   height: 100%;
   float: left;
   padding-top: 15px;
@@ -537,4 +548,98 @@ box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
   .aspirations {
     display: inline-block !important;
   }
+}
+.indexheader {
+  width: 100vw;
+  height: 80vh;
+  background-color: #4a18fd88;
+  background-blend-mode: multiply;
+  background-image: url('https://i.imgur.com/5WQRuHo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.indexmenu {
+  width: 70vw;
+  margin-left: 20vw;
+  height: 80px;
+}
+.indexlogo {
+  width: 20vw;
+  height: 100%;
+  float: left;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 0.5vh;
+}
+.indexnav {
+  width: 45vw;
+  height: 100%;
+  float: left;
+  text-align: right; 
+  margin-right: 5vw;
+  padding-top: 1.65%;
+}
+.indexnav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.indexnav>ul>li>a:hover {
+  text-decoration: underline;
+}
+.signup:hover {
+  text-decoration: none !important;
+}
+.login:hover {
+  text-decoration: none !important;
+}
+
+.indexnav>ul>li {
+  float: right; 
+}
+
+.indexnav>ul>li>a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.login {
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px; 
+  padding-left: 10px;
+}
+.signup {
+  border: 1px solid #ffffff;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px; 
+}
+.indexheadertext {
+  width: 60vw;
+  margin-left: 20vw;
+  text-align: center;
+  font-style: bold;
+  color: #ffffff;
+  margin-top: 18vh;
+}
+.indexheadertext>button {
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  font-size: 17px;
+  margin-top: 3vh;
+}
+.indexheadermidimages {
+  margin-top: 7.5vh;
+  height: 30vh;
+  width: 100vw;
+  text-align: justify;
+}
+.percentchange>h4 {
+  color: #4980F9;
 }
