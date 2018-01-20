@@ -304,3 +304,70 @@ body {
   float: left;
   margin-left: 10px;
 }
+.listHeader {
+  width: 45vw;
+  height: 125px;
+  margin-top: 30px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  padding-left: 30px;
+  float: left;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.marketStatHeader {
+  width: 37vw;
+  margin-left: 15px;
+  height: 125px;
+  float: left;
+  margin-top: 30px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.topcrypto {
+  width: 45vw;
+  height: 80px;
+  margin-top: 10px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  padding-left: 30px;
+  float: left;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.rank {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.name{
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-top: 15px;
+}
+.price {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.marketcap {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-top: 15px;
+}
+.percentchange {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding-top: 15px;
+}

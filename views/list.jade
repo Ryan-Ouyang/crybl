@@ -1,1 +1,20 @@
 extends layout
+
+block content
+    .listHeader
+        h3 Top Cryptocurrencies (24 Hours)
+        p The following are the top cryptocurrencies which (ranked from largest marketcap to least marketcap). Information is updated every five minutes.
+    .topcrypto
+        .rank 
+            h3 #{cmc.rank}
+        .name
+            h4 #{cmc.name}
+        .price
+            h4 #{cmc.price}
+        .marketcap 
+            h4 #{cmc.market_cap_usd}
+        .percentchange
+            h4 some #{cmc.percent_change_24h}
+    .marketStatHeader
+        h3 Top Cryptocurrency Stats (24 hours)
+        p The following are the statistical values for the top cryptocurrencies in the last 24 hours.
