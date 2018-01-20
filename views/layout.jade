@@ -27,16 +27,36 @@ html
         a(href='')
           i.fa.fa-bell-o
     div.sidebar
-      a.barlink(href="/")
-        i.fa.fa-home
-      a.barlink(href="")
-        i.fa.fa-archive
-      a.barlink(href="")
-        i.fa.fa-line-chart
-      a.barlink(href="")
-        i.fa.fa-newspaper-o
-      a.barlink(href="")
-        i.fa.fa-credit-card
+      if (page_name === 'dashboard')
+        a.barlink(href="/dashboard")
+          i.fa.fa-home.working
+      else
+        a.barlink(href="/dashboard")
+          i.fa.fa-home
+      if (page_name === 'list')
+        a.barlink(href="/list")
+          i.fa.fa-archive.working
+      else 
+        a.barlink(href="/list")
+          i.fa.fa-archive
+      if (page_name === 'market')
+        a.barlink(href="/market")
+          i.fa.fa-line-chart.working
+      else
+        a.barlink(href="/market")
+          i.fa.fa-line-chart
+      if (page_name === 'news')
+        a.barlink(href="/news")
+          i.fa.fa-newspaper-o.working
+      else
+        a.barlink(href="/news")
+          i.fa.fa-newspaper-o
+      if (page_name === 'wallet')
+        a.barlink(href="/wallet")
+          i.fa.fa-credit-card.working
+      else
+        a.barlink(href="/wallet")
+          i.fa.fa-credit-card
 
 
     div.container

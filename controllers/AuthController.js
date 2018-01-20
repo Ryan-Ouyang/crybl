@@ -14,6 +14,31 @@ userController.register = function(req, res) {
   res.render('register');
 };
 
+// Go to dashboard page 
+userController.dashboard = function(req, res) {
+  res.render('dashboard', { page_name : 'dashboard'});
+};
+
+// Go to wallet page 
+userController.wallet = function(req, res) {
+  res.render('wallet', { page_name : 'wallet'});
+};
+
+// Go to news page 
+userController.news = function(req, res) {
+  res.render('news', { page_name: 'news'});
+};
+
+// Go to market page 
+userController.market = function(req, res) {
+  res.render('market', { page_name: 'market'});
+};
+
+// Go to list page
+userController.list = function(req, res) {
+  res.render('list', { page_name: 'list'});
+};
+
 // Post registration
 userController.doRegister = function(req, res) {
   User.register(new User({ username : req.body.username, name: req.body.name }), req.body.password, function(err, user) {

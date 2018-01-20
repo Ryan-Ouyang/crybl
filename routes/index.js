@@ -5,6 +5,21 @@ var auth = require("../controllers/AuthController.js");
 // restrict index for logged in user only
 router.get('/', auth.home);
 
+// route to list page
+router.get('/list', auth.list);
+
+// route to dashboard page
+router.get('/dashboard', auth.dashboard);
+
+// route to market page 
+router.get('/market', auth.market);
+
+// route to news
+router.get('/news', auth.news);
+
+//route to wallet page 
+router.get('/wallet', auth.wallet);
+
 // route to register page
 router.get('/register', auth.register);
 
