@@ -28,8 +28,6 @@ getJSON('https://api.blockcypher.com/v1/eth/main', function(error, response){
     app.locals.blockcypher=(response)
 })
 
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

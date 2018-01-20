@@ -250,7 +250,7 @@ body {
   width: calc(100vw - 170px);
   height: 40vh;
 }
-.dashboardnews {
+.dashboardleaderboard {
   width: 60%;
   height: 41vh;
   margin-top: 15px;
@@ -258,6 +258,12 @@ body {
   border-radius: 10px;
   border: 1px solid #DDE3E6;
   float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.dashboardleaderboard>h4 {
+  padding-left: 20px;
+  margin-bottom: -5px;
 }
 .dashboardstat {
   width: 38.5%;
@@ -370,4 +376,100 @@ body {
   height: 100%;
   float: left;
   padding-top: 15px;
+}
+.playerprofile  {
+  width: 100%;
+  height: 3.95vh;
+  border-bottom: 1px solid #D3D7DF;
+}
+.playerrank {
+  float: left;
+  width: 20%;
+}
+.playername {
+  float: left;
+  width: 40%;
+}
+.playerpercentage {
+  float: left;
+  width: 40%
+}
+.transactionhistory {
+  width: 70%;
+  height: calc(100vh - 90px);
+  margin-top: 15px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  float: left;
+  padding-left: 20px;
+}
+.payments {
+  float: left;
+  width: calc(30% - 15px);
+  height: calc(100vh - 90px);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.valuedeposit {
+  height: 48.5%;
+  width: 100%;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+}
+.quickpay {
+  height: 48.5%;
+  margin-top: 5%;
+  width: 100%;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+}
+.dashboardstat>h4 {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: #4980F9 !important;
+}
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: rgb(39, 55, 90) !important;
+}
+/* Pie charts consist of solid slices where you can use this selector to override the default style. */
+.ct-series-a .ct-slice-pie {
+  background-color: #4980F9;
+}
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  background-color: #4980F9 !important;
+}
+.ct-series-a .ct-area, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-slice-pie {
+  fill: #4980F9 !important;
+}
+.ct-series-b .ct-area, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-slice-pie {
+  fill: rgb(39, 55, 90) !important;
+}
+.ct-series-e .ct-area, .ct-series-e .ct-slice-donut-solid, .ct-series-e .ct-slice-pie {
+  fill: rgb(4, 36, 105) !important;
+}
+.ct-series-c .ct-area, .ct-series-c .ct-slice-donut-solid, .ct-series-c .ct-slice-pie {
+  fill: rgb(40, 69, 133) !important;
+}
+.ct-series-d .ct-area, .ct-series-d .ct-slice-donut-solid, .ct-series-d .ct-slice-pie {
+  fill: rgb(100, 132, 199) !important;
+}
+.ct-label {
+  font-size: 12px !important;
+}
+.ct-chart2 {
+  margin-top: -20px;
+  height: 90%;
+}
+.ct-chart {
+  margin-top: 5px;
 }
