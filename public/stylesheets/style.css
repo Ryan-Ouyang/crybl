@@ -417,6 +417,24 @@ body {
   background-color: #FEFEFE;
   border-radius: 10px;
   border: 1px solid #DDE3E6;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.valuedeposit>button {
+  height: 40px;
+  width: 175px;
+  border: none;
+  background-color: #4980F9;
+  border-radius: 25px;
+  text-align: left;
+  padding-left: 15px;
+  color: #ffffff;
+  z-index: -999 !important;
+  margin-top: 11.7px;
+  -webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+
 }
 .quickpay {
   height: 48.5%;
@@ -472,4 +490,51 @@ body {
 }
 .ct-chart {
   margin-top: 5px;
+}
+.favic {
+  background-color: rgb(12, 42, 107);
+  height: 34px;
+  width: 34px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 17px;
+  padding-left: 11px;
+  padding-top: 5px;
+  margin-left: 138px;
+  margin-top: 14.7px;
+  position: absolute;
+  z-index: 999 !important;
+  
+}
+.valuedeposit>form>input {
+  height: 45px;
+  width: 90%;
+  border: none;
+  border: 1px solid #D3D7DF;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.radiobutton {
+  width: 15%;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+  border: 2px solid rgb(114, 154, 241);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.aspirations {
+  width: 100%;
+  margin-left: -4.5%;
+  height: 25%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 16px;
+  display: none;
+}
+@media screen and (min-width: 1340px) {
+  .aspirations {
+    display: inline-block !important;
+  }
 }

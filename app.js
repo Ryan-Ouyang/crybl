@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-//var request = require('request');
+var request = require('request');
 var getJSON = require('get-json');
 
 mongoose.Promise = global.Promise;
@@ -22,7 +22,6 @@ var app = express();
 
 // make request to call for blockcypher API
 //request("https://api.blockcypher.com/v1/eth/main").pipe(fs.createWriteStream("blockchain.json"));
-
 //app.locals.blockchain = require('./blockchain.json');
 getJSON('https://api.blockcypher.com/v1/eth/main', function(error, response){
     app.locals.blockcypher=(response)
