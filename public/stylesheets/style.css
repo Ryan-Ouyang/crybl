@@ -235,7 +235,9 @@ block {
   width: 350px;
   height: 450px;
   float: left;
-  background-color: #4980F9;
+  background-color: #4a18fd88;
+  background-blend-mode: multiply;
+  background-image: url(https://i.imgur.com/5WQRuHo.jpg);
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
