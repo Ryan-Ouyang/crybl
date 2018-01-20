@@ -237,3 +237,69 @@ body {
   height: 450px;
   float: left;
 }
+.dashboardheader {
+  width: calc(100vw - 170px);
+  height: 40vh;
+  margin-top: 30px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  padding-left: 30px;
+}
+.dashboardfooter {
+  width: calc(100vw - 170px);
+  height: 40vh;
+}
+.dashboardnews {
+  width: 60%;
+  height: 41vh;
+  margin-top: 15px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  float: left;
+}
+.dashboardstat {
+  width: 38.5%;
+  height: 41vh;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  border: 1px solid #DDE3E6;
+  float: left;  
+}
+.websiteAlive {
+  height: 50px;
+  width: 100%;
+  background-color: #dff0d8;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.dashboardleft {
+  width: 70%;
+  height: 100%;
+  float: left; 
+  padding-right: 30px;
+  padding-top: 5px;
+}
+.dashboardright {
+  width: 30%;
+  float: left;
+  height: 100%;
+  background-image: url(https://i.imgur.com/QKPi7sE.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.websiteAlive>i {
+  font-size: 20px;
+  float: left;
+}
+.websiteAlive>p {
+  font-size: 15px;
+  float: left;
+  margin-left: 10px;
+}
