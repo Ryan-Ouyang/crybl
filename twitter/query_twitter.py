@@ -74,5 +74,5 @@ class Query:
     for post in newsfeed:
         print post + '\n'
     
-    with open('newsfeed.txt', 'w') as outfile:
+    with open('newsfeed.json', 'w') as outfile:
         json.dump(newsfeed, outfile)
