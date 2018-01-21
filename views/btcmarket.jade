@@ -8,6 +8,42 @@ block content
             h4.color Please correct all errors and then attempt to reconnect.
     if (user)
         .headcontent 
+            include btcmarketgraph.html
         .footercontent
             .objectsection#buy
+                .titlecontent
+                    .divleftfloat
+                        h4 BTC/ETH BIDS
+                    .divpricefloat
+                        p Price
+                    .divquantityfloat
+                        p Quantity
+                .editcontent
+                    each bid, i in btcdepth.bids
+                        .divleftfloat
+                            p Current bids for the trading pair.
+                        .divpricefloat
+                            p #{[i]}
+                        .divquantityfloat
+                            p #{bid}
             .objectsection#sell
+                .titlecontent
+                    .divrightfloat
+                        h4 BTC/ETH ASKS
+                    .divpricerightfloat
+                        p Price
+                    .divquantityrightfloat
+                        p Quantity
+                .editcontent
+                    each ask, i in btcdepth.asks
+                        .divrightfloat
+                            p Current asks for the trading pair.
+                        .divpricerightfloat
+                            p #{[i]}
+                        .divquantityrightfloat
+                            p #{ask}
+
+
+//            each ask, i in btcdepth.asks
+                li #{[i]}
+                li #{ask}  the oj code

@@ -6,5 +6,40 @@ block content
             h2 Authentication Error
             h4 In order to trade on the CRYBL platform, you must be logged in, have deposited funds greater than 0.01ETH and have linked your Binance platform API key.
             h4.color Please correct all errors and then attempt to reconnect.
-    if (user)
+   if (user)
+        .headcontent 
+            include ltcmarketgraph.html
+        .footercontent
+            .objectsection#buy
+                .titlecontent
+                    .divleftfloat
+                        h4 LTC/ETH BIDS
+                    .divpricefloat
+                        p Price
+                    .divquantityfloat
+                        p Quantity
+                .editcontent
+                    each bid, i in ltcdepth.bids
+                        .divleftfloat
+                            p Current bids for the trading pair.
+                        .divpricefloat
+                            p #{[i]}
+                        .divquantityfloat
+                            p #{bid}
+            .objectsection#sell
+                .titlecontent
+                    .divrightfloat
+                        h4 LTC/ETH ASKS
+                    .divpricerightfloat
+                        p Price
+                    .divquantityrightfloat
+                        p Quantity
+                .editcontent
+                    each ask, i in ltcdepth.asks
+                        .divrightfloat
+                            p Current asks for the trading pair.
+                        .divpricerightfloat
+                            p #{[i]}
+                        .divquantityrightfloat
+                            p #{ask}
     

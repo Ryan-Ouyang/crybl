@@ -7,4 +7,39 @@ block content
             h4 In order to trade on the CRYBL platform, you must be logged in, have deposited funds greater than 0.01ETH and have linked your Binance platform API key.
             h4.color Please correct all errors and then attempt to reconnect.
     if (user)
+        .headcontent 
+            include usdtmarketgraph.html
+        .footercontent
+            .objectsection#buy
+                .titlecontent
+                    .divleftfloat
+                        h4 USDT/ETH BIDS
+                    .divpricefloat
+                        p Price
+                    .divquantityfloat
+                        p Quantity
+                .editcontent
+                    each bid, i in usdtdepth.bids
+                        .divleftfloat
+                            p Current bids for the trading pair.
+                        .divpricefloat
+                            p #{[i]}
+                        .divquantityfloat
+                            p #{bid}
+            .objectsection#sell
+                .titlecontent
+                    .divrightfloat
+                        h4 USDT/ETH ASKS
+                    .divpricerightfloat
+                        p Price
+                    .divquantityrightfloat
+                        p Quantity
+                .editcontent
+                    each ask, i in usdtdepth.asks
+                        .divrightfloat
+                            p Current asks for the trading pair.
+                        .divpricerightfloat
+                            p #{[i]}
+                        .divquantityrightfloat
+                            p #{ask}
     

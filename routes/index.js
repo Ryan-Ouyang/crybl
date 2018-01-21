@@ -19,10 +19,10 @@ router.get('/market', auth.market);
 
 // route to get sub-market pages
 router.get('/btcmarket', auth.btcmarket)
-router.get('/usdtmarket', auth.btcmarket)
-router.get('/neomarket', auth.btcmarket)
-router.get('/funmarket', auth.btcmarket)
-router.get('/ltcmarket', auth.btcmarket)
+router.get('/usdtmarket', auth.usdtmarket)
+router.get('/neomarket', auth.neomarket)
+router.get('/funmarket', auth.funmarket)
+router.get('/ltcmarket', auth.ltcmarket)
 
 // route to news
 router.get('/news', auth.news);

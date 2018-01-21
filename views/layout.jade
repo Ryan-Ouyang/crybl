@@ -12,7 +12,7 @@ html
     div.header
       div.sidebarbutton
         a.sidebarlink(href='#')
-          i.fa.fa-bars.sidebarexpand
+          img(src='/images/logo/cryblLogo.png')
       .profile
         if (!user)
           button.actionbutton#buttonone(onclick="window.location.href='/register'")
@@ -27,7 +27,7 @@ html
           button.logoutbutton(onclick="window.location.href='/logout'")
             i.fa.fa-sign-in
       .alertsection
-        a(href='')
+        a(href='/dashboard')
           i.fa.fa-bell-o
     div.sidebar
       if (page_name === 'dashboard')

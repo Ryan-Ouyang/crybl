@@ -68,7 +68,8 @@ app.use('/users', users);
 
 
 binance.depth("ETHBTC", (error, depth, symbol) => {
-	app.locals.btcdepth=(depth);
+  app.locals.btcdepth=(depth);
+  //console.log(depth);
 });
 binance.depth("ETHUSDT", (error, depth, symbol) => {
 	app.locals.usdtdepth=(depth);
