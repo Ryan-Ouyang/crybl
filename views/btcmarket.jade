@@ -3,3 +3,8 @@ extends layout
 block content
     if (!user)
         .errorwarning
+            h2 Authentication Error
+            h4 In order to trade on the CRYBL platform, you must be logged in, have deposited funds greater than 0.01ETH and have linked your Binance platform API key.
+            h4.color Please correct all errors and then attempt to reconnect.
+    if (user)
+    
