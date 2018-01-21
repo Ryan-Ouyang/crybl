@@ -79,6 +79,16 @@ block {
   border-right: 1px solid #DDE3E6;
   color: #D3D7DF;
 }
+.sidebarlogo {
+  width: 200px;
+  height: 60px;
+  float: left;
+}
+.sidebarlogo>a>img {
+  width: 45%;
+  margin-left: 5px;
+  margin-top: 1px;
+}
 
 .sidebarlink {
   height: 20px;
@@ -1020,4 +1030,65 @@ box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
   width: 17.5%;
   float: right;
   border-bottom: 1px solid #D3D7DF;
+}
+.custocontent {
+  width: 80vw;
+  height: calc(100vh - 60px - 30px);
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
+}
+.custoside {
+  width: 20vw;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #D3D7DF;
+  float: left;
+  margin-top: -20px;
+}
+.custootherside {
+  width: 60vw;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+}
+.custoheader {
+  width: 20vw;
+  background-color: #4980F9;
+  height: 50px;
+  border-top-left-radius: 10px;
+}
+.custoheader>h3 {
+  padding-top: 15px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+.custosection {
+  height: 100px;
+  width: 20vw;
+  border-bottom: 1px solid #D3D7DF;
+}
+#custoone {
+  width: 92%;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+#custotwo {
+  width: 80%;
+  margin-left: 22.5px;
+}
+#custothree {
+  width: 90%;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+#custofour {
+  width: 35%;
+  margin-left: 90px;
+  margin-top: 5px;
 }

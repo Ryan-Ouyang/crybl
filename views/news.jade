@@ -1,4 +1,21 @@
 extends layout
 
 block content
-    p #{twitter[0].imageUrl}
+    .custocontent
+        .custoside
+            .custoheader
+                h3 Curated News
+            .custosection
+                a(href="")
+                    img#custoone(src='https://i.imgur.com/aal8QC3.png')
+            .custosection
+                a(href="")
+                    img#custotwo(src='https://i.imgur.com/VPs4eSk.png')
+            .custosection
+                a(href="")
+                    img#custothree(src='https://i.imgur.com/M2ydGGx.png')
+            .custosection
+                a(href="")
+                    img#custofour(src='https://i.imgur.com/3iTDbEy.png')
+        .custootherside    
+            include cryptocomparewidget.html      

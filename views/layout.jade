@@ -11,8 +11,11 @@ html
   body
     div.header
       div.sidebarbutton
-        a.sidebarlink(href='#')
+        a.sidebarlink(href='/dashboard')
           img(src='/images/logo/cryblLogo.png')
+      div.sidebarlogo
+        a(href='/dashboard')
+          img(src='/images/logo/cryblText.png')
       .profile
         if (!user)
           button.actionbutton#buttonone(onclick="window.location.href='/register'")
