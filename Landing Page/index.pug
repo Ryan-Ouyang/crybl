@@ -1,0 +1,193 @@
+doctype
+html
+head
+  title VimFolio | Trade at the speed of light.
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='description', content='Creative agency in Toronto focused on building interactive solutions that follow industry trends.')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+  link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css' rel='stylesheet')
+  link(href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' rel='stylesheet')
+  link(href='style/button.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet')
+  link(href='style/main.css', rel='stylesheet')
+body
+
+  .backgroundDiv
+  //Image background using undervalued z-index div. 
+  .landingheadimages
+    img.rightHeaderImage(src='images/landingHeader/guitarPick.svg')
+    img.leftHeaderImage(src='images/landingHeader/orangeleft.svg')
+
+  //Header section using overvalued z-index div absolutley positioned above the images.
+  .landinghead
+    .header
+      .leftHeader
+        .logoImg.wow.fadeIn(data-wow-delay='0.2s')
+          h3 <i class="fa fa-pie-chart"></i> CRYBL
+        .sideTextDiv.wow.fadeIn(data-wow-delay='0.4s')
+          p | Compete and trade at the speed of light.
+      .rightHeader
+        ul.menu
+          //- li.wow.fadeIn(data-wow-delay="0.2s")
+          //-   a(href='index.html') Home
+          //- li.wow.fadeIn(data-wow-delay="0.4s")
+          //-   a(href='#about') About
+          //- li.wow.fadeIn(data-wow-delay="0.6s")
+          //-   a(href='#') Services
+          //- li.wow.fadeIn(data-wow-delay="0.8s")
+          //-   a(href='#') Quote
+          li.wow.fadeIn(data-wow-delay="1s")
+            a.contactbutton(href='#') Login
+          li.wow.fadeIn(data-wow-delay="1s")
+            a.contactbutton2(href='#') Sign Up
+    .middleSection.col-lg-12
+      .col-lg-6.col-lg-offset-1.alignmentMiddleSection
+        //- h5.wow.fadeIn(data-wow-delay="0.1s") INNOVATIVE SOLUTIONS FOR THE COMPANIES OF THE FUTURE
+        h1#mainText.wow.fadeIn(data-wow-delay="0.3s")
+          | Make calls. 
+          strong Make money.
+        h2#mainSubtext.wow.fadeIn(data-wow-delay="0.4s")
+          | CRYBL is a beautiful social trading platform for the currencies from the future. Monitor your portfolio, compete with your friends, and track crypto trends all from a streamlined interface.
+          
+          .buttonContainer
+            .favic
+                fa.fa.fa-arrow-right
+            button(href='#') Get started.
+                
+
+        img#BTCTicker.wow.fadeIn.tickerShadow(data-wow-delay="0.1s")(src='images/tickers/BTC ticker.svg')
+        img#ETHTicker.wow.fadeIn.tickerShadow(data-wow-delay="0.15s")(src='images/tickers/ETH ticker.svg')
+        img#NEOTicker.wow.fadeIn.tickerShadow(data-wow-delay="0.2s")(src='images/tickers/NEO ticker.svg')
+        img#FUNTicker.wow.fadeIn.tickerShadow(data-wow-delay="0.25s")(src='images/tickers/FUN ticker.svg')
+
+        svg#smallRectangle(width="200px" height="80px")
+          defs
+            linearGradient#grad1(x1="0%" y1="0%" x2="100%" y2="0%")
+              stop(offset="0%" style="stop-color: #3B95F3" stop-opacity="0.5")
+              stop(offset="100%" style="stop-color: #6ECDEE" stop-opacity="1")
+          rect(width="200px" height="80px" rx="10" ry="10" fill="url(#grad1)")
+
+        svg#smallRectangle2(width="200px" height="80px")
+          defs
+            linearGradient#grad1(x1="0%" y1="0%" x2="100%" y2="0%")
+              stop(offset="0%" style="stop-color: #6ECDEE" stop-opacity="0.5")
+              stop(offset="100%" style="stop-color: #3B95F3" stop-opacity="1")
+          rect(width="100px" height="40px" rx="10" ry="10" fill="url(#grad1)")
+
+          
+      //- .col-lg-5.sectionOfCards
+      //-   .card.wow.fadeIn
+      //-     img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bitcoin_logo.svg/2000px-Bitcoin_logo.svg.png')
+      //-     hr
+      //-     h4 Bitcoin / USDT
+      //-     h5 Partner Developers Program
+      //-     //- p Being part of the Shopify Partner Developers program, we're given a greater insight into the development of our clients sites. Through the program, we are able to provide swift solutions to our clients demands.
+      //-     .savingsSection
+      //-       .priceSaved
+      //-         h2 $12537
+      //-         p saved and counting.
+      //-       .buttonSection
+      //-         a(href='http://namecheap.com') 
+      //-           i.fa.fa-paper-plane
+      //-   .card.floatunder.wow.fadeIn(data-wow-delay="0.3s")
+      //-     img(src='images/logos/namecheap.svg')
+      //-     hr
+      //-     h4 Namecheap
+      //-     h5 Reseller Partner Program
+      //-     p Forming partnerships with the largest domain and hosting providers in the world enables us to provide effective bundled pricing for our clients. 
+      //-     .savingsSection
+      //-       .priceSaved
+      //-         h2 $1340
+      //-         p saved and counting.
+      //-       .buttonSection
+      //-         a(href='http://shopify.com') 
+      //-           i.fa.fa-paper-plane
+
+  //- .nextSection
+  //-   .imageSection
+  //-     img.leftHeaderRotatedImage(src='images/landingHeader/orangeleft.svg')
+  //-   .textSection
+  //-     .imageAboutSection.col-md-4.col-sm-4.col-lg-4.col-lg-offset-1.col-md-offset-1.col-sm-offset-1.wow.fadeIn(data-wow-delay="0.6s")
+  //-       img.img-responsive(src='https://static.pexels.com/photos/6385/hands-people-woman-meeting.jpg')
+  //-       h6 Stock photos to portray our idealogies.
+  //-     .aboutSection.col-md-6.col-sm-6.col-lg-6.col-lg-offset-1.col-md-offset-1.col-sm-offset-1#about  
+  //-       h1.wow.fadeIn(data-wow-delay="0.6s") About the firm.
+  //-       h5.wow.fadeIn(data-wow-delay="0.625s") We don't play games.
+  //-       p.wow.fadeIn(data-wow-delay="0.65s") 
+  //-         | Of all the things we've learnt building web applications for our clients, one of the lessons stands out the most. Planning before development has it's benefits. A large majority of creative agencies in today's day and age outsource their planning, or don't plan at all. At 
+  //-         strong Arrays 
+  //-         | we aim to redefine the development and design procedure for the companies of the future.
+  //-       p.wow.fadeIn(data-wow-delay="0.675s")
+  //-         | Working together with your design or development teams we'll integrate your workflow into our development styles, allowing for fluid procedure transistions. Once you've heard our pitch, send us an invite to your Slack, Gitter, Trello, or your futuristic messaging platform and we'll make sure to stay in the loop with everything that happens in and around the firm. Because at the end of the day, a creative agency out of sight, shouldn't be out of mind.
+  //-     .stackSection.col-lg-10-col-lg-offset-1.col-md-offset-1.col-sm-offset-1.col-md-10.col-sm-10
+  //-       h5.wow.fadeIn(data-wow-delay="0.3s") WE WORK WITH MODERN TECHNOLOGIES
+  //-       .stackCardsSection.col-lg-12.col-md-12.col-sm-12
+  //-         .stackCard.wow.fadeIn(data-wow-delay="0.4s")
+  //-           .stackHeader
+  //-             h4 Web Development
+  //-             p Simple frameworks, simple code. That's what we aim for in our web development strategies.
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.5s")
+  //-             i.devicon-html5-plain
+  //-             p HTML
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.55s")
+  //-             i.devicon-css3-plain
+  //-             p CSS
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.6s")
+  //-             i.devicon-javascript-plain
+  //-             p JS
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.65s")
+  //-             i.fa.fa-code
+  //-             p PUG
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.7s")
+  //-             i.devicon-sass-plain
+  //-             p SASS
+  //-           a.quoteButton(href='#') GET A QUOTE
+  //-         .stackCard.wow.fadeIn(data-wow-delay="0.6s")
+  //-           .stackHeader
+  //-             h4 Graphic Design
+  //-             p Experience in multiple platforms to ensure seamless integration with client workflows.
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.6s")
+  //-             i.fa.fa-diamond
+  //-             p Sketch
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.65s")
+  //-             i.devicon-illustrator-plain
+  //-             p Illustrator
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.7s")
+  //-             i.devicon-photoshop-plain
+  //-             p Photoshop
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.75s")
+  //-             i.fa.fa-paint-brush
+  //-             p Adobe XD
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.8s")
+  //-             i.fa.fa-object-group
+  //-             p Moqups
+  //-           a.quoteButton(href='#') GET A QUOTE
+  //-         .stackCard.wow.fadeIn(data-wow-delay="0.8s")
+  //-           .stackHeader
+  //-             h4 Marketing
+  //-             p Finding effective tactics to market to target audiences in niche business industries.
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.8s")
+  //-             i.devicon-google-plain
+  //-             p Backlink Building
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.85s")
+  //-             i.devicon-twitter-plain
+  //-             p Social Impressions
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.9s")
+  //-             i.fa.fa-users
+  //-             p Keyword Metrics
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="0.95s")
+  //-             i.fa.fa-mouse-pointer
+  //-             p CPI Development
+  //-           .lang.col-lg-12.col-md-12.col-sm-12.wow.fadeIn(data-wow-delay="1s")
+  //-             i.fa.fa-shopping-bag
+  //-             p Social Commerce
+  //-           a.quoteButton(href='#') GET A QUOTE
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+script(src='js/main.js')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+script(src='js/button.js')
+script(new WOW().init();)
