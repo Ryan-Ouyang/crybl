@@ -212,15 +212,19 @@ block {
 .username {
   float: left;
   margin-top: 22px;
+  margin-left: 10px;
 }
 .logoutbutton {
-  float: left;
+  float: right;
   background-color: #4980F9;
   color: #ffffff;
   border: none;
   width: 30px;
   height: 30px;
   border-radius: 50px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .registerpane {
   width: 700px;
@@ -410,7 +414,7 @@ block {
 .transactionhistory {
   width: 70%;
   height: calc(100vh - 90px);
-  margin-top: 15px;
+  margin-top: 30px;
   background-color: #FEFEFE;
   border-radius: 10px;
   border: 1px solid #DDE3E6;
@@ -421,7 +425,7 @@ block {
   float: left;
   width: calc(30% - 15px);
   height: calc(100vh - 90px);
-  margin-top: 15px;
+  margin-top: 30px;
   margin-left: 15px;
 }
 .valuedeposit {
@@ -456,6 +460,45 @@ box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
   background-color: #FEFEFE;
   border-radius: 10px;
   border: 1px solid #DDE3E6;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.quickpay>h6 {
+  font-size: 10px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+.userreferral {
+  width: 90%%;
+  height: 70px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+  border-radius: 5px;
+}
+.userreferral>img {
+  height: 60px;
+  width: 60px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  float: left;
+}
+.userreferral>h5 {
+  float: left;
+  padding-left: 10px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+.userreferral>p {
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #4980F9;
+
 }
 .dashboardstat>h4 {
   padding-left: 20px;
@@ -644,4 +687,159 @@ box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.25);
 }
 .percentchange>h4 {
   color: #4980F9;
+}
+.historyhead {
+  height: 50px;
+  width: 102.6%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: -2.4%;
+  border-bottom: 1px solid #DDE3E6;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-top: 7px;
+}
+.smallhead {
+  width: 102.6%;
+  height: 120px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: -2.4%;
+  border-bottom: 1px solid #DDE3E6;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+.headdate {
+  width: 20%;
+  height: 50px;
+  float: left;
+}
+.headdescription {
+  width: 60%;
+  height: 50px;
+  float: left;
+}
+.headchange {
+  width: 20%;
+  height: 50px;
+  float: left;
+}
+.profilepic {
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  border-radius: 5px; 
+  border: 3px solid #D3D7DF;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.leaderboardfloat {
+  width: 90vw;
+  margin-top: 15px;
+  height: calc(100vh - 300px - 105px);
+  text-align: center;
+}
+.topcontender {
+  height: 120px;
+  margin-bottom: 15px;
+  width: 19%;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-left: 0.50%;
+  margin-right: 0.50%;
+  -webkit-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 3px 23px 0px rgba(0,0,0,0.15);
+}
+.leaderboardheader {
+  width: 90vw;
+  height: 300px;
+  background-color: #4a18fd88;
+  background-blend-mode: multiply;
+  background-image: url(https://i.imgur.com/5WQRuHo.jpg);
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 50%;
+}
+.imagecontender {
+  height: 70px;
+  width: 70px;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+.hashcontender {
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+.hashcontender>p {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 8px;
+  font-size: 8.5px;
+}
+.center {
+  font-size: 20px !important;
+  position: absolute;
+  margin-top: 15px !important;
+  margin-left: 5.75% !important;
+  font-weight: bold !important;
+  color: green;
+}
+.namecontender {
+  height: 70px;
+  width: calc(100% - 70px);
+  border-top-right-radius: 5px;
+  float: left;
+}
+.namecontender>h3 {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 15px;
+  color: #4980F9;
+}
+.namecontender>h6 {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+/*Image files for leaderboard*/
+#imageone {
+  background-image: url('https://pbs.twimg.com/profile_images/902842357124435968/qQxbZ8TN_400x400.jpg');
+}
+#imagetwo {
+  background-image: url('https://i.imgur.com/UGSrti2.jpg');
+}
+#imagethree {
+  background-image: url('https://i.imgur.com/xQ2oUgl.jpg');
+}
+#imagefour {
+  background-image: url('https://i.imgur.com/lVHW7rH.jpg');
+}
+#imagefive {
+  background-image: url('https://i.imgur.com/h4azRz1.jpg');
+}
+#imagesix {
+  background-image: url('https://i.imgur.com/lVHW7rH.jpg');
+}
+#imageseven {
+  background-image: url('https://i.imgur.com/ZE5CnMP.jpg');
+}
+#imageeight {
+  background-image: url('https://i.imgur.com/FwwvG7w.jpg');
+}
+#imagenine {
+  background-image: url('https://i.imgur.com/dDmbCGY.jpg');
+}
+#imageten {
+  background-image: url('https://i.imgur.com/fRQN1xq.jpg');
 }

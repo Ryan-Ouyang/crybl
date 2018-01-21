@@ -566,17 +566,21 @@ block content
             h4 #{cmc[49].percent_change_24h}%
 
     .marketStatHeader
-        h3 Top Cryptocurrency Stats (24 hours)
-        p The following are the statistical values for the top cryptocurrencies in the last 24 hours.
-        h3 Market Cap (total)
-        h4 $#{cmc2.total_market_cap_usd} USD
-        h3 24Hr Volume
-        h4 #{cmc2.total_24h_volume_usd}
-        h3 Bitcoin Dominance
-        h4 #{cmc2.bitcoin_percentage_of_market_cap}%
-        h3 Active Currencies
-        h4 #{cmc2.active_currencies} Currencies
-        h3 Active Assets
-        h4 #{cmc2.active_assets} Assets
-        h3 Active Markets 
-        h4 #{cmc2.active_markets} Markets
+        if (!user)
+            h2 This portal is only open to members.
+            h4 Sign in or register today to start reaping the benefits of one of the most advanced crypto management portfolios, while trading to compete for a chance to win up to $1500!
+        if (user)
+            h3 Top Cryptocurrency Stats (24 hours)
+            p The following are the statistical values for the top cryptocurrencies in the last 24 hours.
+            h3 Market Cap (total)
+            h4 $#{cmc2.total_market_cap_usd} USD
+            h3 24Hr Volume
+            h4 #{cmc2.total_24h_volume_usd}
+            h3 Bitcoin Dominance
+            h4 #{cmc2.bitcoin_percentage_of_market_cap}%
+            h3 Active Currencies
+            h4 #{cmc2.active_currencies} Currencies
+            h3 Active Assets
+            h4 #{cmc2.active_assets} Assets
+            h3 Active Markets 
+            h4 #{cmc2.active_markets} Markets

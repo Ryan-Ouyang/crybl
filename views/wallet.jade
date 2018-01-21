@@ -1,24 +1,52 @@
 extends layout
 
 block content
-    .transactionhistory
-        table
-            tr
-                th Date
-                th Description 
-                th Value
-                th Volatility
-            tr 
-                th 
-    .payments
-        .valuedeposit 
-            h1 $23,950
-            h6 Current Balance
-            form(action="")
-                input(type="text", placeholder="Enter an amount.")
-            .favic
-                fa.fa.fa-arrow-right
-            button(href='#') ADD FUNDS
-            .aspirations
-                img(src='https://i.imgur.com/VeUWtmI.png')
-        .quickpay
+    if (!user)
+        .transactionhistory(style="height: 150px;")
+            h2 This portal is only open to members.
+            h4(style="color: #4980F9;") Sign in or register today to start reaping the benefits of one of the most advanced crypto management portfolios, while trading to compete for a chance to win up to $1500!
+    if (user)
+        .transactionhistory
+            .historyhead
+                .headdate
+                    h4 Date
+                .headdescription
+                    h4 Description
+                .headchange
+                    h4 Change
+            .smallhead
+                .headdate
+                    h4 01/16/18
+                .headdescription
+                    h4 Effective purchase was made on token REQ at 11:40AM resulting in a cumulative sell order of approximatley 97th percentile sale value, resulting in a loss.
+                .headchange
+                    h4(style="color: red;") -2.73%
+            .smallhead
+                .headdate
+                    h4 09/27/17
+                .headdescription
+                    h4 Refferal earnings from quarterly benefits programs rewarded. Additional incentive provided for activity on platform during the month of September.
+                .headchange
+                    h4(style="color: green;") +14.48%
+        .payments
+            .valuedeposit 
+                h1 $23,950
+                h6 Current Balance
+                form(action="")
+                    input(type="text", placeholder="Enter an amount.")
+                .favic
+                    fa.fa.fa-arrow-right
+                button(href='#') ADD FUNDS
+                .aspirations
+                    img(src='https://i.imgur.com/VeUWtmI.png')
+            .quickpay
+                h1 Referrals
+                h6 All earnings are credited at the end of the month.
+                .userreferral
+                    img(src='https://i.imgur.com/ZfRnVNH.jpg')
+                    h5 Mitzie Hunter
+                    p Referred on 01/20/2018
+                .userreferral
+                    img(src='https://i.imgur.com/lVODYBk.jpg')
+                    h5 Sama Williams
+                    p Referred on 01/19/2018

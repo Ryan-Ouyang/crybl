@@ -11,6 +11,9 @@ router.get('/list', auth.list);
 // route to dashboard page
 router.get('/dashboard', auth.dashboard);
 
+// route to leaderboard page 
+router.get('/leaderboard', auth.leaderboard);
+
 // route to market page 
 router.get('/market', auth.market);
 

@@ -19,6 +19,11 @@ userController.dashboard = function(req, res) {
   res.render('dashboard', { page_name : 'dashboard', user : req.user });
 };
 
+// Go to leaderboard page
+userController.leaderboard = function(req, res) {
+  res.render('leaderboard', { page_name : 'leaderboard', user : req.user });
+};
+
 // Go to wallet page 
 userController.wallet = function(req, res) {
   res.render('wallet', { page_name : 'wallet', user : req.user });
@@ -47,7 +52,7 @@ userController.doRegister = function(req, res) {
     }
 
     passport.authenticate('local')(req, res, function () {
-      res.redirect('/');
+      res.redirect('dashboard');
     });
   });
 };
@@ -60,14 +65,14 @@ userController.login = function(req, res) {
 // Post login
 userController.doLogin = function(req, res) {
   passport.authenticate('local')(req, res, function () {
-    res.redirect('/');
+    res.redirect('dashboard');
   });
 };
 
 // logout
 userController.logout = function(req, res) {
   req.logout();
-  res.redirect('/');
+  res.redirect('dashboard');
 };
 
 module.exports = userController;
