@@ -11,6 +11,7 @@ var request = require('request');
 var getJSON = require('get-json');
 var Coinmarketcap = require('node-coinmarketcap-api');
 var coinmarketcap = new Coinmarketcap();
+var binance = require('node-binance-api');
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/node-auth')
@@ -64,6 +65,24 @@ app.use('/users', users);
   //let top_25 = await coinmarketcap.ticker(null, 'CAD', 25);
  // app.locals.cmc=(top_25)
 //})();
+
+
+binance.depth("ETHBTC", (error, depth, symbol) => {
+	app.locals.btcdepth=(depth);
+});
+binance.depth("ETHUSDT", (error, depth, symbol) => {
+	app.locals.usdtdepth=(depth);
+});
+binance.depth("LTCETH", (error, depth, symbol) => {
+  app.locals.ltcdepth=(depth);
+});
+binance.depth("NEOETH", (error, depth, symbol) => {
+  app.locals.neodepth=(depth);
+});
+binance.depth("FUNETH", (error, depth, symbol) => {
+	app.locals.fundepth=(depth);
+});
+
 
 // passport configuration
 var User = require('./models/User');

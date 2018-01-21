@@ -44,6 +44,23 @@ userController.list = function(req, res) {
   res.render('list', { page_name: 'list', user: req.user });
 };
 
+// Render seperate market pages
+userController.btcmarket = function(req, res) {
+  res.render('btcmarket', { page_name: 'market', user: req.user });
+};
+userController.usdtmarket = function(req, res) {
+  res.render('usdtmarket', { page_name: 'market', user: req.user });
+};
+userController.neomarket = function(req, res) {
+  res.render('neomarket', { page_name: 'market', user: req.user });
+};
+userController.funmarket = function(req, res) {
+  res.render('funmarket', { page_name: 'market', user: req.user });
+};
+userController.ltcmarket = function(req, res) {
+  res.render('ltcmarket', { page_name: 'market', user: req.user });
+};
+
 // Post registration
 userController.doRegister = function(req, res) {
   User.register(new User({ username : req.body.username, name: req.body.name }), req.body.password, function(err, user) {
