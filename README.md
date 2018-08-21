@@ -1,4 +1,5 @@
 # CRYBL
+Crybl was designed as a unified platform for investors to manage, trade, and analyze their crypto-currency investments. It unifies various sources of information into one easily-accessible platform.
 
 ## Inspiration
 The idea stemmed from the conspicuous lack of beautiful, easy to use, web-based portfolio managers available to cryptocurrency investors. We realized, however, that such a platform could be so much more. With CRYBL, we introduce smart contracts to provide a gamified investing experience.
